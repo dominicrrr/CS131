@@ -10,6 +10,7 @@ Compiler Used: Clang
 using namespace std;
 
 int main(){
+    // calculate the sum of two integers
     int integer1 = 75;
     int integer2 = 25;
 

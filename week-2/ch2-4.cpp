@@ -32,5 +32,7 @@ int main(){
         <<"and "<<fence_height<<" feet tall twice,\n"
         <<"You would need " <<two_coats<<" gallons of paint!"
         <<"\n";
+
+    cout << 5%2 << endl;
     return 0;
 }   

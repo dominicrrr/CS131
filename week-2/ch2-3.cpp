@@ -9,12 +9,16 @@ Compiler Used: Clang
 using namespace std;
 
 int main() {
+    // avg rise in millimeters
     float avg_ocean_rise = 1.8;
+
+    // conversion variables
     float mili_to_centi = 0.1;
     float centi_to_inch = 0.3937;
 
-    float century = 100.0;
+    int century = 100;
 
+    // conversion
     float rise_in_centi = century * (mili_to_centi * avg_ocean_rise);
     float rise_in_inch = centi_to_inch * rise_in_centi;
 

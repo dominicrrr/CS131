@@ -10,7 +10,8 @@ Compiler Used: Clang
 using namespace std;
 
 int main(){ 
-    float tank_capacity = 10.0;
+    // capacity in gallons
+    int tank_capacity = 10;
     
     float avg_miles_per_gallon = 27.5;
     float avg_miles_per_gallon_highway = 32.5;
