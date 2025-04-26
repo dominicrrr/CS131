@@ -1,1 +1,8 @@
 .vscode
+
+# Ignore files with no extension
+*
+!*/        # Except folders
+!*.cpp     # Except C++ source files
+!*.h       # Except header files
+!*.hpp     # Except header files if you use .hpp
