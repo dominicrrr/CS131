@@ -9,6 +9,7 @@ Purpose: To display knowledge with more mathematical operations
 using namespace std;
 
 int main(){
+    // Goal: Calculate the calories someone may eat from number of crackers
     float num_of_crackers_per_box = 40;
     float servings_per_box = 10;
     float calories_per_serving = 10;

@@ -11,7 +11,14 @@ Purpose: To display knowledge with more mathematical operations
 using namespace std;
 
 int main(){
-    // Goal: Calculate the average of 5 test scores
+    // Goal: Calculate the average of 5 test scores    
+
+    // initialize an array to hold our scores
+    double scores[5];
+
+    // variable to hold the sum of scores as we iterate through,
+    // so we dont have to iterate through the array again to add
+    // up the score
     double test_score_total = 0;
 
     // Ordinal suffix map
@@ -21,8 +28,8 @@ int main(){
     ordinal_suffix_map[3] = "rd";
     // all other numbers will end with a "th"
 
-
-    double scores[5] = {0, 0, 0, 0, 0};
+    // iterate through the array, prompt the user for their test score,
+    // save their score into the array via the index
     for (int i = 0; i<5; i++){
         float test_score = 0;
 
@@ -34,14 +41,14 @@ int main(){
             << " score\n->";
         cin >> test_score;
         
-        // Save our test score within the array
+        // Save our test score within our place in the array
         scores[i] = test_score;
         test_score_total += test_score;
     }
 
     // Calculate the mean/average of the scores, then round to 1 decimal point
     cout << fixed << setprecision(1);
-    cout<<"The average score of your 5 tests was " 
+    cout<<"The average score of your 5 tests were " 
     << test_score_total / 5 <<"\n";
     return 0;
 }

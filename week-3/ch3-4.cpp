@@ -11,20 +11,26 @@ Purpose: To display knowledge with more mathematical operations
 using namespace std;
 
 
-int area_of_circle(double radius){
-    float pi = 3.14;
-    return pi * (radius * radius);
+// function to calculate the area of a pizza
+double area_of_circle(double radius){
+    const float PI = 3.14;
+    return PI * (radius * radius);
 }
 
+// function to calculate num of slices for given area of pizza
 int slice_calculator(double area_of_pizza){
-    double slice_area = 12.789;
-    return floor(area_of_pizza / slice_area);
+    const double SLICE_AREA = 12.789;
+    return floor(area_of_pizza / SLICE_AREA);
 }
 
 int main (){
+    // Goal: find the area of a pizza given a user's pizza diameter inches,
+    // and display number of slices a user could cut it into given the minimum 
+    //12.789 sq inches per slice
+
     double pizza_diameter;
     
-    cout <<"In inches, how wide is your pizza\n:";
+    cout <<"In inches, how wide is your pizza?\n:";
     cin >> pizza_diameter;
 
     cout <<

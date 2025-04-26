@@ -9,7 +9,7 @@ Purpose: To display knowledge with more mathematical operations
 using namespace std;
 
 int main(){
-    // Calculate monthly and yearly expenses of a user
+    // Calculate monthly and yearly expenses of a user's bills
 
     double housing_bill, phone_bill, internet_bill, cable_bill;
     cout<<"How much is your rent or mortgage payment?\n:";
@@ -30,4 +30,5 @@ int main(){
 
     cout<<"Your monthly expenses total to: $" << monthly_expenses <<"\n";
     cout<<"That is $"<<yearly_expenses<<" a year!\n";
+    return 0;
 }
